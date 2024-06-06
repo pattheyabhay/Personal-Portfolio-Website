@@ -168,4 +168,13 @@ footer a:hover {
     section {
         width: 100%;
     }
+    profile-img{
+        width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio or adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid white;
+    margin-bottom: 10px; /* Space between the image and the text */
+    object-fit: cover; /* Ensures the image covers the element while maintaining aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a 3D effect */
+    }
 }
