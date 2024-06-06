@@ -1,4 +1,7 @@
-/* Reset some basic elements */
+html {
+    scroll-behavior: smooth;
+}
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
