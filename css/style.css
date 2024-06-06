@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 html{
 scroll-behavior: smooth;}
 
@@ -9,7 +11,7 @@ body, h1, h2, p, ul, li, a, img, form, input, textarea, button {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Merriweather", serif;
     line-height: 1.6;
     padding: 20px;
     background: linear-gradient(180deg, #1820ad, #1e3c72);
@@ -19,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(180deg, #1820ad, #1e3c72);
+    background: transparent;
     color: white;
     padding: 20px 0;
 }
@@ -64,16 +66,27 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    background: linear-gradient(180deg, #1820ad, #1e3c72);
+    /* background: linear-gradient(180deg, #1820ad, #1e3c72); */
+    background: transparent;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: 100%;
     max-width: 800px;
 }
 section:hover{
     background: linear-gradient(90deg, #1820ad, #1e3c72);
 
+}
+
+#profile-img{
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio or adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    border: 10px solid white;
+    margin-bottom: 20px; /* Space between the image and the text */
+    object-fit: cover; /* Ensures the image covers the element while maintaining aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a 3D effect */
 }
 
 section h2 {
@@ -105,22 +118,22 @@ form textarea {
 
 form button {
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #1e00ff;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #ff6347;
+    background: linear-gradient(180deg, rgb(1, 166, 255), blue)
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
     padding: 20px;
-    background: linear-gradient(90deg, #1820ad, #1e3c72);
+    background: linear-gradient(180deg, #1820ad, #1e3c72);
     color: white;
 }
 
@@ -135,13 +148,16 @@ footer a {
 }
 
 footer a:hover {
-    color: #ff6347;
+    color: #ffffff;
+    transform: scale(1.1); /* Makes the element 10% larger */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
+        justify-content: center;
         margin: 10px 0;
     }
 
